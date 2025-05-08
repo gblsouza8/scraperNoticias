@@ -12,3 +12,6 @@ if resposta.status_code == 200:
     for noticia in noticias:
         titulo = noticia.find('p').text
         print(f'Noticia: {titulo}')
+
+else:
+    print(f"Erro ao acessar a página. {resposta.status_code}")
